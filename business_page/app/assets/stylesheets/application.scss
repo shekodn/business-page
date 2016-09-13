@@ -1,0 +1,26 @@
+@import "materialize";
+
+@import "materialize/components/color";
+$primary-color: color("blue", "lighten-2") !default;
+@import 'materialize';
+@import "materialize/extras/nouislider";
+
+
+
+.parallax-container {
+	height: 500px;
+}
+
+.section {
+    height: 500px;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
