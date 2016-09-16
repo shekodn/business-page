@@ -14,8 +14,15 @@ $(document).ready(function(){
 
 
 //Slider
+var height = window.innerHeight
+var navOffset = 50
+
 $(document).ready(function(){
-    $('.slider').slider({full_width: true});
+    $('.slider').slider({
+        full_width: false,
+        indicators: false,
+        height: height - 55
+    });
 });
 
 
@@ -32,10 +39,6 @@ $('.slider').slider('prev');
 
 
 //scroll
-var options = [
-  {selector: '#top', offset: 2500, callback: function(el) {
-    Materialize.showStaggeredList($(el));
-  } }
-];
-Materialize.scrollFire(options);
+
+
 // end scroll

@@ -1,9 +1,15 @@
 @import "materialize/components/color";
-$primary-color: color("blue", "lighten-2") !default;
+$primary-color: color("grey", "darken-4") !default;
 @import 'materialize';
 @import "materialize/extras/nouislider";
 
 
+.parallax-container{
+
+    margin-bottom: -20px;
+    height: 520px;
+
+}
 
 .cover{
     height: 500px;
@@ -13,10 +19,16 @@ $primary-color: color("blue", "lighten-2") !default;
     height: 500px;
 }
 
-.slider{
 
-    background-color: red;
 
+
+img {
+    opacity: 0.5;
+
+}
+.row h2 {
+    margin-top: 60px;
+    text-align: center;
 }
 
 
