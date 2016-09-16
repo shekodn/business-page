@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-
-    root to: 'static_pages#index'
-
+    root 'static_pages#home'
+    get 'logo' => 'static_pages#home'
+    
     resources :static_pages
 end

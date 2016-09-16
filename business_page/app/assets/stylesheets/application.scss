@@ -1,53 +1,25 @@
-@import "materialize";
-
 @import "materialize/components/color";
-$primary-color: color("red", "lighten-2") !default;
+$primary-color: color("blue", "lighten-2") !default;
 @import 'materialize';
 @import "materialize/extras/nouislider";
 
 
-.parallax-container {
 
+.cover{
     height: 500px;
-    background-image: url("/images/Alps.jpg");
 
 }
-
-.section {
+.section{
     height: 500px;
 }
 
-.title-container{
+.slider{
 
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-.navbar{
+    background-color: red;
 
 }
 
 
-
-// Universal
-
-h1{
-	color: white;
-    text-align: center;
-}
-
-h2{
-	text-align: center;
-	color: #484848;
-}
-
-h6{
-
-	text-align: center;
-	color: white;
-}
 
 body {
   display: flex;
