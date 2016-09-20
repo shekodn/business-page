@@ -6,6 +6,7 @@
 //= require jquery-smooth-scroll
 
 
+
 //Parallax
 $(document).ready(function(){
     $('.parallax').parallax();
@@ -42,3 +43,21 @@ $('.slider').slider('prev');
 
 
 // end scroll
+
+
+//Smooth scroll
+
+$(document).ready(function() {
+
+$("a.topLink").click(function() {
+    $("html, body").animate({
+        scrollTop: $($(this).attr("href")).offset().top + "px"
+    }, {
+        duration: 500,
+        easing: "swing"
+    });
+    return false;
+});
+
+});
+//End smooth scroll

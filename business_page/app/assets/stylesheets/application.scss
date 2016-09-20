@@ -1,5 +1,5 @@
 @import "materialize/components/color";
-$primary-color: color("grey", "darken-4") !default;
+$primary-color: color("grey", "lighten-5") !default;
 @import 'materialize';
 @import "materialize/extras/nouislider";
 
@@ -19,6 +19,28 @@ $primary-color: color("grey", "darken-4") !default;
     height: 500px;
 }
 
+.nav-wrapper a{
+
+
+    color: black;
+
+}
+
+.footer{
+
+    color: black;
+
+
+}
+
+nav ul li:hover {
+
+
+}
+
+nav ul li:active {
+
+}
 
 
 
@@ -29,6 +51,10 @@ img {
 .row h2 {
     margin-top: 60px;
     text-align: center;
+}
+
+.page-footer h5, p, a{
+    color: black;
 }
 
 
