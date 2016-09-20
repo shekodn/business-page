@@ -46,18 +46,18 @@ $('.slider').slider('prev');
 
 
 //Smooth scroll
+//Not a gem
 
 $(document).ready(function() {
-
-$("a.topLink").click(function() {
-    $("html, body").animate({
-        scrollTop: $($(this).attr("href")).offset().top + "px"
-    }, {
-        duration: 500,
-        easing: "swing"
+    
+    $("a.topLink").click(function() {
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top + "px"
+        }, {
+            duration: 800,
+            easing: "swing"
+        });
+        return false;
     });
-    return false;
-});
-
 });
 //End smooth scroll

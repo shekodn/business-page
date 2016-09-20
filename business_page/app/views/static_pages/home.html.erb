@@ -13,7 +13,7 @@
 
     <!--- section 2 -->
     <div class="parallax-container"> <a id="products"></a> <!-- anchor -->
-        <div class="parallax"> <%= image_tag('Alps.jpg') %>    </div>
+        <div class="parallax"> <%= image_tag('Alps.jpg') %> </div>
         <div class="row container">
             <h2> Products </h2>
         </div>
@@ -30,17 +30,28 @@
     </div>
     <!--- end section 3 -->
 
-
     <!--- section 4 -->
+    <div class="parallax-container"> <a id="commercial"></a> <!-- anchor -->
+        <div class="parallax"> <%= image_tag('Alps.jpg') %> </div>
+        <div class="row container">
+            <h2> Commercial Division </h2>
+        </div>
+    </div>
+    <!--- end section 4 -->
 
-    <div class="parallax-container"> <a id="contact"></a> <!-- anchor -->
-        <div class="parallax"><%= image_tag('Alps.jpg') %></div>
+
+    <!--- section 5 -->
+
+    <div class="section white">
+        <a id="contact"></a> <!-- anchor -->
         <div class="row container">
             <h2> Contact </h2>
+            <%= render 'static_pages/form' %>
+
         </div>
     </div>
 
-    <!--- end section 4 -->
+    <!--- end section 5 -->
 
 
 

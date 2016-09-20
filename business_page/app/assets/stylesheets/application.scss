@@ -8,7 +8,6 @@ $primary-color: color("grey", "lighten-5") !default;
 
     margin-bottom: -20px;
     height: 520px;
-
 }
 
 .cover{
@@ -56,6 +55,17 @@ img {
 .page-footer h5, p, a{
     color: black;
 }
+
+/* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #000;
+}
+/* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+
 
 
 
