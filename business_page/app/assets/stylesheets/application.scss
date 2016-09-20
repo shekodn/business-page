@@ -26,14 +26,10 @@ $primary-color: color("grey", "lighten-5") !default;
 }
 
 .footer{
-
     color: black;
-
-
 }
 
 nav ul li:hover {
-
 
 }
 
@@ -57,24 +53,51 @@ img {
 }
 
 /* label focus color */
-  .input-field input[type=text]:focus + label {
+.input-field input[type=text]:focus + label {
     color: #000;
 }
+
+
+
+//Contact Form
+// name and last name
 /* label underline focus color */
-  .input-field input[type=text]:focus {
+.input-field input[type=text]:focus {
     border-bottom: 1px solid #000;
     box-shadow: 0 1px 0 0 #000;
-  }
+}
+/* label focus color */
+.input-field input[type=email]:focus + label {
+    color: #000;
+}
+
+//email
+/* label underline focus color */
+.input-field input[type=email]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+/* label focus color */
+.input-field input[type=email]:focus + label {
+    color: #000;
+}
+
+//text area
+
+
+//End contact form
+
 
 
 
 
 body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 main {
-  flex: 1 0 auto;
+    flex: 1 0 auto;
 }
