@@ -1,0 +1,36 @@
+<%= form_tag '/messages#contact'%>
+<%= form_for @message do |f| %>
+
+<%= render 'layouts/error_messages' %>
+
+<div class="row">
+
+        <div class="input-field col s4">
+            <%= f.text_field :name %>
+            <%= f.label :name %>
+
+        </div>
+
+        <div class="input-field col s4">
+            <%= f.email_field :email %>
+            <%= f.label :email %>
+
+        </div>
+
+        <div class="input-field col s4">
+            <%= f.text_field :subject %>
+            <%= f.label :subject %>
+
+        </div>
+
+        <div class="input-field col s12">
+            <%= f.text_area :content %>
+        </div>
+
+        <% end %>
+
+        <button class="btn waves-effect waves-light" type="submit" name="action"> Submit
+            <i class="material-icons right"></i>
+        </button>
+
+</div>

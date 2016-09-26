@@ -2,15 +2,12 @@
 //= require jquery_ujs
 //= require_tree .
 //= require materialize-sprockets
-//= require materialize/extras/nouislider
-//= require jquery-smooth-scroll
 
 
 
 //Parallax
-$(document).ready(function(){
-    $('.parallax').parallax();
-});
+//$(document).ready(function(){
+//});
 // end parallax
 
 
@@ -18,13 +15,9 @@ $(document).ready(function(){
 var height = window.innerHeight
 var navOffset = 50
 
-$(document).ready(function(){
-    $('.slider').slider({
-        full_width: false,
-        indicators: false,
-        height: height - 55
-    });
-});
+//$(document).ready(function(){
+
+//});
 
 
 // Pause slider
@@ -50,6 +43,14 @@ $('.slider').slider('prev');
 
 $(document).ready(function() {
 
+    $('.parallax').parallax();
+
+    $('.slider').slider({
+        full_width: false,
+        indicators: false,
+        height: height - 55
+    });
+
     $("a.topLink").click(function() {
         $("html, body").animate({
             scrollTop: $($(this).attr("href")).offset().top + "px"
@@ -61,3 +62,7 @@ $(document).ready(function() {
     });
 });
 //End smooth scroll
+
+//Toasts
+
+//End toast
